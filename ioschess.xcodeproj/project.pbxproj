@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF899FE41C30CF0F007D16FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF899FE31C30CF0F007D16FF /* main.m */; };
+		BF899FE71C30CF0F007D16FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF899FE61C30CF0F007D16FF /* AppDelegate.m */; };
+		BF899FEA1C30CF0F007D16FF /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = BF899FE91C30CF0F007D16FF /* GameScene.m */; };
+		BF899FEC1C30CF0F007D16FF /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = BF899FEB1C30CF0F007D16FF /* GameScene.sks */; };
+		BF899FEF1C30CF0F007D16FF /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF899FEE1C30CF0F007D16FF /* GameViewController.m */; };
+		BF899FF21C30CF0F007D16FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF899FF01C30CF0F007D16FF /* Main.storyboard */; };
+		BF899FF41C30CF0F007D16FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF899FF31C30CF0F007D16FF /* Assets.xcassets */; };
+		BF899FF71C30CF0F007D16FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF899FF51C30CF0F007D16FF /* LaunchScreen.storyboard */; };
+		BF89A0021C30CF0F007D16FF /* ioschessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF89A0011C30CF0F007D16FF /* ioschessTests.m */; };
+		BF89A00D1C30CF0F007D16FF /* ioschessUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF89A00C1C30CF0F007D16FF /* ioschessUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF899FFE1C30CF0F007D16FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF899FD71C30CF0F007D16FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF899FDE1C30CF0F007D16FF;
+			remoteInfo = ioschess;
+		};
+		BF89A0091C30CF0F007D16FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF899FD71C30CF0F007D16FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF899FDE1C30CF0F007D16FF;
+			remoteInfo = ioschess;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BF899FDF1C30CF0F007D16FF /* ioschess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ioschess.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF899FE31C30CF0F007D16FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF899FE51C30CF0F007D16FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BF899FE61C30CF0F007D16FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BF899FE81C30CF0F007D16FF /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		BF899FE91C30CF0F007D16FF /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		BF899FEB1C30CF0F007D16FF /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		BF899FED1C30CF0F007D16FF /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		BF899FEE1C30CF0F007D16FF /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		BF899FF11C30CF0F007D16FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF899FF31C30CF0F007D16FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF899FF61C30CF0F007D16FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF899FF81C30CF0F007D16FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF899FFD1C30CF0F007D16FF /* ioschessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ioschessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF89A0011C30CF0F007D16FF /* ioschessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ioschessTests.m; sourceTree = "<group>"; };
+		BF89A0031C30CF0F007D16FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF89A0081C30CF0F007D16FF /* ioschessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ioschessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF89A00C1C30CF0F007D16FF /* ioschessUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ioschessUITests.m; sourceTree = "<group>"; };
+		BF89A00E1C30CF0F007D16FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF899FDC1C30CF0F007D16FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF899FFA1C30CF0F007D16FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF89A0051C30CF0F007D16FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF899FD61C30CF0F007D16FF = {
+			isa = PBXGroup;
+			children = (
+				BF899FE11C30CF0F007D16FF /* ioschess */,
+				BF89A0001C30CF0F007D16FF /* ioschessTests */,
+				BF89A00B1C30CF0F007D16FF /* ioschessUITests */,
+				BF899FE01C30CF0F007D16FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF899FE01C30CF0F007D16FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF899FDF1C30CF0F007D16FF /* ioschess.app */,
+				BF899FFD1C30CF0F007D16FF /* ioschessTests.xctest */,
+				BF89A0081C30CF0F007D16FF /* ioschessUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF899FE11C30CF0F007D16FF /* ioschess */ = {
+			isa = PBXGroup;
+			children = (
+				BF899FE51C30CF0F007D16FF /* AppDelegate.h */,
+				BF899FE61C30CF0F007D16FF /* AppDelegate.m */,
+				BF899FE81C30CF0F007D16FF /* GameScene.h */,
+				BF899FE91C30CF0F007D16FF /* GameScene.m */,
+				BF899FEB1C30CF0F007D16FF /* GameScene.sks */,
+				BF899FED1C30CF0F007D16FF /* GameViewController.h */,
+				BF899FEE1C30CF0F007D16FF /* GameViewController.m */,
+				BF899FF01C30CF0F007D16FF /* Main.storyboard */,
+				BF899FF31C30CF0F007D16FF /* Assets.xcassets */,
+				BF899FF51C30CF0F007D16FF /* LaunchScreen.storyboard */,
+				BF899FF81C30CF0F007D16FF /* Info.plist */,
+				BF899FE21C30CF0F007D16FF /* Supporting Files */,
+			);
+			path = ioschess;
+			sourceTree = "<group>";
+		};
+		BF899FE21C30CF0F007D16FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF899FE31C30CF0F007D16FF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF89A0001C30CF0F007D16FF /* ioschessTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF89A0011C30CF0F007D16FF /* ioschessTests.m */,
+				BF89A0031C30CF0F007D16FF /* Info.plist */,
+			);
+			path = ioschessTests;
+			sourceTree = "<group>";
+		};
+		BF89A00B1C30CF0F007D16FF /* ioschessUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BF89A00C1C30CF0F007D16FF /* ioschessUITests.m */,
+				BF89A00E1C30CF0F007D16FF /* Info.plist */,
+			);
+			path = ioschessUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF899FDE1C30CF0F007D16FF /* ioschess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF89A0111C30CF0F007D16FF /* Build configuration list for PBXNativeTarget "ioschess" */;
+			buildPhases = (
+				BF899FDB1C30CF0F007D16FF /* Sources */,
+				BF899FDC1C30CF0F007D16FF /* Frameworks */,
+				BF899FDD1C30CF0F007D16FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ioschess;
+			productName = ioschess;
+			productReference = BF899FDF1C30CF0F007D16FF /* ioschess.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF899FFC1C30CF0F007D16FF /* ioschessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF89A0141C30CF0F007D16FF /* Build configuration list for PBXNativeTarget "ioschessTests" */;
+			buildPhases = (
+				BF899FF91C30CF0F007D16FF /* Sources */,
+				BF899FFA1C30CF0F007D16FF /* Frameworks */,
+				BF899FFB1C30CF0F007D16FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF899FFF1C30CF0F007D16FF /* PBXTargetDependency */,
+			);
+			name = ioschessTests;
+			productName = ioschessTests;
+			productReference = BF899FFD1C30CF0F007D16FF /* ioschessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BF89A0071C30CF0F007D16FF /* ioschessUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF89A0171C30CF0F007D16FF /* Build configuration list for PBXNativeTarget "ioschessUITests" */;
+			buildPhases = (
+				BF89A0041C30CF0F007D16FF /* Sources */,
+				BF89A0051C30CF0F007D16FF /* Frameworks */,
+				BF89A0061C30CF0F007D16FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF89A00A1C30CF0F007D16FF /* PBXTargetDependency */,
+			);
+			name = ioschessUITests;
+			productName = ioschessUITests;
+			productReference = BF89A0081C30CF0F007D16FF /* ioschessUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF899FD71C30CF0F007D16FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "James Shi";
+				TargetAttributes = {
+					BF899FDE1C30CF0F007D16FF = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					BF899FFC1C30CF0F007D16FF = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = BF899FDE1C30CF0F007D16FF;
+					};
+					BF89A0071C30CF0F007D16FF = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = BF899FDE1C30CF0F007D16FF;
+					};
+				};
+			};
+			buildConfigurationList = BF899FDA1C30CF0F007D16FF /* Build configuration list for PBXProject "ioschess" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF899FD61C30CF0F007D16FF;
+			productRefGroup = BF899FE01C30CF0F007D16FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF899FDE1C30CF0F007D16FF /* ioschess */,
+				BF899FFC1C30CF0F007D16FF /* ioschessTests */,
+				BF89A0071C30CF0F007D16FF /* ioschessUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF899FDD1C30CF0F007D16FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF899FEC1C30CF0F007D16FF /* GameScene.sks in Resources */,
+				BF899FF71C30CF0F007D16FF /* LaunchScreen.storyboard in Resources */,
+				BF899FF41C30CF0F007D16FF /* Assets.xcassets in Resources */,
+				BF899FF21C30CF0F007D16FF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF899FFB1C30CF0F007D16FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF89A0061C30CF0F007D16FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF899FDB1C30CF0F007D16FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF899FEF1C30CF0F007D16FF /* GameViewController.m in Sources */,
+				BF899FE71C30CF0F007D16FF /* AppDelegate.m in Sources */,
+				BF899FEA1C30CF0F007D16FF /* GameScene.m in Sources */,
+				BF899FE41C30CF0F007D16FF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF899FF91C30CF0F007D16FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF89A0021C30CF0F007D16FF /* ioschessTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF89A0041C30CF0F007D16FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF89A00D1C30CF0F007D16FF /* ioschessUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF899FFF1C30CF0F007D16FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF899FDE1C30CF0F007D16FF /* ioschess */;
+			targetProxy = BF899FFE1C30CF0F007D16FF /* PBXContainerItemProxy */;
+		};
+		BF89A00A1C30CF0F007D16FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF899FDE1C30CF0F007D16FF /* ioschess */;
+			targetProxy = BF89A0091C30CF0F007D16FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF899FF01C30CF0F007D16FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF899FF11C30CF0F007D16FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF899FF51C30CF0F007D16FF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF899FF61C30CF0F007D16FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF89A00F1C30CF0F007D16FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF89A0101C30CF0F007D16FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF89A0121C30CF0F007D16FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ioschess/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ioschess;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BF89A0131C30CF0F007D16FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ioschess/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ioschess;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BF89A0151C30CF0F007D16FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = ioschessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ioschessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ioschess.app/ioschess";
+			};
+			name = Debug;
+		};
+		BF89A0161C30CF0F007D16FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ioschessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ioschessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ioschess.app/ioschess";
+			};
+			name = Release;
+		};
+		BF89A0181C30CF0F007D16FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = ioschessUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ioschessUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ioschess;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		BF89A0191C30CF0F007D16FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ioschessUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ioschessUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ioschess;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF899FDA1C30CF0F007D16FF /* Build configuration list for PBXProject "ioschess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF89A00F1C30CF0F007D16FF /* Debug */,
+				BF89A0101C30CF0F007D16FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF89A0111C30CF0F007D16FF /* Build configuration list for PBXNativeTarget "ioschess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF89A0121C30CF0F007D16FF /* Debug */,
+				BF89A0131C30CF0F007D16FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BF89A0141C30CF0F007D16FF /* Build configuration list for PBXNativeTarget "ioschessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF89A0151C30CF0F007D16FF /* Debug */,
+				BF89A0161C30CF0F007D16FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BF89A0171C30CF0F007D16FF /* Build configuration list for PBXNativeTarget "ioschessUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF89A0181C30CF0F007D16FF /* Debug */,
+				BF89A0191C30CF0F007D16FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF899FD71C30CF0F007D16FF /* Project object */;
+}
