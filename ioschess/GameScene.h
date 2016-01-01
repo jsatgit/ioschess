@@ -11,5 +11,9 @@
 @interface GameScene : SKScene
 
 @property BOOL contentCreated;
+@property CGFloat boardWidth;
+@property CGFloat cellWidth;
+@property SKNode* selectedNode;
+@property SKShapeNode* board;
 
 @end
