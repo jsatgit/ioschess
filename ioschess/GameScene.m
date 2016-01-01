@@ -12,8 +12,8 @@
 
 -(SKSpriteNode*)createPiece:(NSString*)name withPosition:(CGPoint)position {
     SKTextureAtlas* pieces = [SKTextureAtlas atlasNamed: @"pieces"];
-    SKTexture* blackKing = [pieces textureNamed:name];
-    SKSpriteNode* piece = [SKSpriteNode spriteNodeWithTexture:blackKing size:CGSizeMake(self.cellWidth, self.cellWidth)];
+    SKTexture* pieceTexture = [pieces textureNamed:name];
+    SKSpriteNode* piece = [SKSpriteNode spriteNodeWithTexture:pieceTexture size:CGSizeMake(self.cellWidth, self.cellWidth)];
     CGFloat cellOffset = self.boardWidth/2 - self.cellWidth/2;
     piece.position = CGPointMake(position.x * self.cellWidth - cellOffset, position.y * self.cellWidth - cellOffset);
     piece.name = @"piece";
@@ -25,9 +25,22 @@
     CGFloat cellIndexY = position.y/self.cellWidth;
     int roundedX = floor(cellIndexX);
     int roundedY = floor(cellIndexY);
-    CGFloat nearestX = roundedX * self.cellWidth;
-    CGFloat nearestY = roundedY * self.cellWidth;
-    piece.position = CGPointMake(nearestX + self.cellWidth/2, nearestY + self.cellWidth/2);
+    CGFloat halfBoardWidth = self.boardWidth/2;
+    CGFloat halfCellWidth = self.cellWidth/2;
+    CGFloat nearestX = roundedX * self.cellWidth + halfCellWidth;
+    CGFloat nearestY = roundedY * self.cellWidth + halfCellWidth;
+    if (nearestX < -halfBoardWidth) {
+        nearestX = -halfBoardWidth + halfCellWidth;
+    } else if (nearestX >= halfBoardWidth) {
+        nearestX = halfBoardWidth - halfCellWidth;
+    }
+    
+    if (nearestY < -halfBoardWidth) {
+        nearestY = -halfBoardWidth + halfCellWidth;
+    } else if (nearestY >= halfBoardWidth) {
+        nearestY = halfBoardWidth - halfCellWidth;
+    }
+    piece.position = CGPointMake(nearestX, nearestY);
 }
 
 -(SKShapeNode*)createBoard:(CGPoint)position {
@@ -130,7 +143,6 @@
 -(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     for (UITouch* touch in touches) {
         if (self.selectedNode && [self.selectedNode.name isEqualToString:@"piece"]) {
-            NSLog(@"snap");
             CGPoint position = [touch locationInNode: self.board];
             [self snapToPosition:self.selectedNode withPosition:position];
         }
