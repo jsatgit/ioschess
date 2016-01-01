@@ -16,8 +16,12 @@
     SKSpriteNode* piece = [SKSpriteNode spriteNodeWithTexture:pieceTexture size:CGSizeMake(self.cellWidth, self.cellWidth)];
     CGFloat cellOffset = self.boardWidth/2 - self.cellWidth/2;
     piece.position = CGPointMake(position.x * self.cellWidth - cellOffset, position.y * self.cellWidth - cellOffset);
-    piece.name = @"piece";
+    piece.name = [name stringByAppendingString:@"Piece"];
     return piece;
+}
+
+-(BOOL)isWhite:(SKNode *)node {
+    return [node.name containsString:@"white"];
 }
 
 -(void)snapToPosition:(SKNode*)piece withPosition:(CGPoint)position {
@@ -111,6 +115,14 @@
     [board addChild:[self createPiece:@"whitePawn" withPosition:CGPointMake(7, 6)]];
     [self addChild:board];
     
+    self.whiteTurn = YES;
+    
+    CGFloat headerHeight = (screenHeight - self.boardWidth)/2;
+    self.turnLabel = [SKLabelNode labelNodeWithFontNamed:@"Arial"];
+    [self updateTurnText];
+    self.turnLabel.fontSize = 20;
+    self.turnLabel.position = CGPointMake(screenWidth/2, screenHeight - headerHeight + headerHeight/2);
+    [self addChild:self.turnLabel];
 }
 
 -(void)didMoveToView:(SKView *)view {
@@ -118,7 +130,22 @@
     {
         [self createSceneContents];
         self.contentCreated = YES;
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateTurnText) name:@"turnUpdate" object:self];
     }
+}
+
+-(void)updateTurnText {
+    if (self.whiteTurn) {
+        self.turnLabel.text = @"White's turn";
+        self.turnLabel.fontColor = [SKColor whiteColor];
+    } else {
+        self.turnLabel.text = @"Black's turn";
+        self.turnLabel.fontColor = [SKColor blackColor];
+    }
+}
+
+-(BOOL)isPiece:(SKNode *)node {
+    return [node.name containsString:@"Piece"];
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -126,6 +153,7 @@
         CGPoint position = [touch locationInNode:self];
         SKNode* node = [self nodeAtPoint:position];
         if (self.selectedNode != node) {
+            self.initialPosition = node.position;
             self.selectedNode = node;
         }
     }
@@ -133,7 +161,8 @@
 
 -(void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     for (UITouch* touch in touches) {
-        if (self.selectedNode && [self.selectedNode.name isEqualToString:@"piece"]) {
+        
+        if (self.selectedNode && [self isPiece:self.selectedNode]) {
             CGPoint position = [touch locationInNode: self.board];
             self.selectedNode.position = position;
         }
@@ -142,9 +171,15 @@
 
 -(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     for (UITouch* touch in touches) {
-        if (self.selectedNode && [self.selectedNode.name isEqualToString:@"piece"]) {
+        if (self.selectedNode && [self isPiece:self.selectedNode]) {
             CGPoint position = [touch locationInNode: self.board];
-            [self snapToPosition:self.selectedNode withPosition:position];
+            if ([self isWhite:self.selectedNode] == self.whiteTurn) {
+                [self snapToPosition:self.selectedNode withPosition:position];
+                self.whiteTurn = !self.whiteTurn;
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"turnUpdate" object:self];
+            } else {
+                self.selectedNode.position = self.initialPosition;
+            }
         }
     }
     self.selectedNode = NULL;

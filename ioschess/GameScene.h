@@ -14,6 +14,9 @@
 @property CGFloat boardWidth;
 @property CGFloat cellWidth;
 @property SKNode* selectedNode;
+@property CGPoint initialPosition;
 @property SKShapeNode* board;
+@property BOOL whiteTurn;
+@property SKLabelNode* turnLabel;
 
 @end
